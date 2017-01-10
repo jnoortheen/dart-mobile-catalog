@@ -1,4 +1,4 @@
-# dart-mobile-catalog
+# Dart-mobile-catalog
 Using Dart as a full-stack web development language to create **mobile-catalog-site**. This is a rewrite of [mobile-catalog](https://github.com/jnoortheen/mobile-catalog). The former one is written using Flask, AngularJS & nodejs tasks. 
 
 ## Tech-Stack
