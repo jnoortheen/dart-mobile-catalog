@@ -21,3 +21,10 @@ Using Dart as a full-stack web development language to create **mobile-catalog-s
   - [ ] creatomg controllers/end-point handlers
   - [ ] creating dummy views
   - [ ] creating dummy data
+- [ ] iteration 2
+  - [ ] implementing models and REST endpoints
+  - [ ] adding authorisation
+- [ ] iteration 3
+  - [ ] templates
+  - [ ] styles and themes
+  - [ ] front-end scripting in Dart
