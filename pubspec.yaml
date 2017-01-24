@@ -1,14 +1,14 @@
 name: 'dart_mobile_catalog'
 version: 0.0.1
-description: An absolute bare-bones web app.
-#author: jnoortheen <email@example.com>
-#homepage: https://www.example.com
+description: Full featured multi-user mobile catalog web app.
+author: jnoortheen <jnoortheen@gmail.com>
+homepage: https://github.com/jnoortheen/dart-mobile-catalog
 
 environment:
   sdk: '>=1.0.0 <2.0.0'
 
-#dependencies:
-#  my_dependency: any
+dependencies:
+  redstone:
 
 dev_dependencies:
   browser: '>=0.10.0 <0.11.0'
