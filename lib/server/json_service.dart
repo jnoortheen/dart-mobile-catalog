@@ -20,7 +20,7 @@ class jsonService {
   }
 
   /// Returns items only matching the given category
-  @app.Route("/filter/:category")
+  @app.Route("/category/:category")
   withCategory(String category) {
     return {"Category": category};
   }
