@@ -7,30 +7,30 @@ import 'package:redstone_mapper/plugin.dart';
 import 'package:redstone_mapper_mongo/service.dart';
 import 'package:dart_mobile_catalog/models/item.dart';
 
+
+import 'package:redstone_mapper/mapper.dart';
+import 'package:redstone_mapper_mongo/manager.dart';
+import 'package:redstone_mapper_mongo/metadata.dart';
+
 /// Service to create and delete mobile items
 @app.Group("/item")
-@Encode()
 class ItemService extends MongoDbService<Item> {
   ItemService() : super("items");
 
+  ///  dumps all items in json format
   @app.Route("/json")
-  Future<List<Item>> json(String type) {
-    return find();
-  }
+  Future<List<Item>> json(String type) => find();
 
   /// creates/updates a mobile item
   @app.DefaultRoute(methods: const [app.PUT])
-  newItem() {
-    return "item updated";
+  Future<Item> newItem(@Decode() Item itm) {
+    print(itm);
+    return insert(itm).then((_) => itm);
   }
 
   /// deletes a mobile item from the catalog
   @app.DefaultRoute(methods: const [app.DELETE])
-  delItem() {
-    return "deleted";
-  }
-
-  _getItem(String name) {
-    return {"item ": name};
+  Future<bool> delItem() async {
+    return true;
   }
 }
